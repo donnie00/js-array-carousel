@@ -9,12 +9,16 @@ img {
 	overflow: hidden;
 }
 
-.carousel-container img {
+#imgContainer img {
 	display: none;
 }
 
 .carousel-container > #imgContainer > .active {
 	display: block;
+}
+
+#imgContainer {
+	height: 100%;
 }
 
 .btn-next {
@@ -25,4 +29,20 @@ img {
 .btn-prev {
 	position: absolute;
 	top: 0;
+}
+
+#slider {
+	width: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#slider > img {
+	object-fit: contain;
+	opacity: 0.3;
+}
+
+#slider > .active {
+	opacity: 1;
 }
